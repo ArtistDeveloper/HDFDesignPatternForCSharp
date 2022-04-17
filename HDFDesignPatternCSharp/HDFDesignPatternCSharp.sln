@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDFDesignPatternCSharp", "HDFDesignPatternCSharp\HDFDesignPatternCSharp.csproj", "{C41ABE16-DFD3-4EAA-82CD-E7538C12830F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41ABE16-DFD3-4EAA-82CD-E7538C12830F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41ABE16-DFD3-4EAA-82CD-E7538C12830F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41ABE16-DFD3-4EAA-82CD-E7538C12830F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41ABE16-DFD3-4EAA-82CD-E7538C12830F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40A926A2-3F96-4041-966C-DFC41883C6B3}
+	EndGlobalSection
+EndGlobal
