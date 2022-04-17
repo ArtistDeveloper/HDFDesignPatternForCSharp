@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace HDFDesignPatternCSharp.Ducks
 {
-    public interface IQuackBehavior
+    public class FlyWithWings : IFlyBehavior
     {
-        void Quack();
+        public void Fly()
+        {
+            Console.WriteLine("날고 있어요!");
+        }
     }
 }

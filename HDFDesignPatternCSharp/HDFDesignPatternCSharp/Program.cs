@@ -4,13 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using HDFDesignPatternCSharp.Ducks;
+
 namespace HDFDesignPatternCSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello world");
+            Duck mallard = new MallardDuck();
+            mallard.PerformQuack();
+            mallard.PerformFly();
         }
     }
 }

@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace HDFDesignPatternCSharp.Ducks
 {
-    public interface IQuackBehavior
+    public class OriginQuack : IQuackBehavior
     {
-        void Quack();
+        public void Quack()
+        {
+            Console.WriteLine("꽥");
+        }
     }
 }
