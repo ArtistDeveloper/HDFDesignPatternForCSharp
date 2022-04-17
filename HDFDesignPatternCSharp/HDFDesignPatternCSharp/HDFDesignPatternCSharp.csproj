@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ducks\Duck.cs" />
+    <Compile Include="Ducks\DuckMain.cs" />
     <Compile Include="Ducks\FlyNoWay.cs" />
     <Compile Include="Ducks\FlyWithWings.cs" />
     <Compile Include="Ducks\IFlyBehavior.cs" />
@@ -52,7 +53,6 @@
     <Compile Include="Ducks\MuteQuack.cs" />
     <Compile Include="Ducks\OriginQuack.cs" />
     <Compile Include="Ducks\Squeak.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

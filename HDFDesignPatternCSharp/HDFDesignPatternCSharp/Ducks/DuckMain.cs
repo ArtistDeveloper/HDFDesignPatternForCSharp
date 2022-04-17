@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using HDFDesignPatternCSharp.Ducks;
-
-namespace HDFDesignPatternCSharp
+namespace HDFDesignPatternCSharp.Ducks
 {
-    class Program
+    class DuckMain
     {
         static void Main(string[] args)
         {
