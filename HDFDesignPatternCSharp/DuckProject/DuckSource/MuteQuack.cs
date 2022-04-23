@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDFDesignPatternCSharp.Ducks
+namespace DuckProject.DuckSource
 {
-    public class Squeak : IQuackBehavior
+    public class MuteQuack : IQuackBehavior
     {
         public void Quack()
         {
-            Console.WriteLine("삑");
+            Console.WriteLine("<< 조용~ >>");
         }
     }
 }

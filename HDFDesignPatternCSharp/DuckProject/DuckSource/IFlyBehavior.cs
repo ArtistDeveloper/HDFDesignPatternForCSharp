@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDFDesignPatternCSharp.Ducks
+namespace DuckProject.DuckSource
 {
-    public interface IQuackBehavior
+    public interface IFlyBehavior
     {
-        void Quack();
+        void Fly();
     }
 }

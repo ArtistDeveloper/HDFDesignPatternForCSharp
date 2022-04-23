@@ -4,15 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDFDesignPatternCSharp.Ducks
+namespace DuckProject.DuckSource
 {
     class DuckMain
     {
         static void Main(string[] args)
         {
             Duck mallard = new MallardDuck();
+            Duck rubber = new RubberDuck();
+
+            Console.WriteLine("Mallard Duck");
             mallard.PerformQuack();
             mallard.PerformFly();
+
+            Console.WriteLine("Rubber Duck");
+            rubber.PerformQuack();
+            rubber.PerformFly();
         }
     }
 }

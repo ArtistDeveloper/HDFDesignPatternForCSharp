@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HDFDesignPatternCSharp.Ducks
+namespace DuckProject.DuckSource
 {
     public class FlyWithWings : IFlyBehavior
     {
