@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DuckProject.DuckSource
 {
-    public class MallardDuck : Duck
+    class ModelDuck : Duck
     {
-        public MallardDuck()
+        public ModelDuck()
         {
+            FlyBehavior = new FlyNoWay();
             QuackBehavior = new OriginQuack();
-            FlyBehavior = new FlyWithWings();
         }
 
         public override void Display()
         {
-            Console.WriteLine("저는 물 오리입니다.");
+            Console.WriteLine("저는 모형오리입니다.");
         }
     }
 }

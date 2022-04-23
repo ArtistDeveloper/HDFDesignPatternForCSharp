@@ -8,8 +8,8 @@ namespace DuckProject.DuckSource
 {
     public abstract class Duck
     {
-        public IFlyBehavior flyBehavior;
-        public IQuackBehavior quackBehavior;
+        public IFlyBehavior FlyBehavior { get; set; }
+        public IQuackBehavior QuackBehavior { get; set; }
 
         public Duck() { }
 
@@ -17,12 +17,12 @@ namespace DuckProject.DuckSource
 
         public void PerformFly()
         {
-            flyBehavior.Fly();
+            FlyBehavior.Fly();
         }
 
         public void PerformQuack()
         {
-            quackBehavior.Quack();
+            QuackBehavior.Quack();
         }
 
         public void Swim()

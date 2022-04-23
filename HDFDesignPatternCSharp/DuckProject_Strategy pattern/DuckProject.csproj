@@ -46,10 +46,12 @@
     <Compile Include="DuckSource\Duck.cs" />
     <Compile Include="DuckSource\DuckMain.cs" />
     <Compile Include="DuckSource\FlyNoWay.cs" />
+    <Compile Include="DuckSource\FlyRocketPowered.cs" />
     <Compile Include="DuckSource\FlyWithWings.cs" />
     <Compile Include="DuckSource\IFlyBehavior.cs" />
     <Compile Include="DuckSource\IQuackBehavior.cs" />
     <Compile Include="DuckSource\MallardDuck.cs" />
+    <Compile Include="DuckSource\ModelDuck.cs" />
     <Compile Include="DuckSource\MuteQuack.cs" />
     <Compile Include="DuckSource\OriginQuack.cs" />
     <Compile Include="DuckSource\RubberDuck.cs" />

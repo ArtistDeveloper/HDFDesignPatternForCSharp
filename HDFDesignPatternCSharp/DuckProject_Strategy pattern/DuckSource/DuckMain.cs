@@ -20,6 +20,10 @@ namespace DuckProject.DuckSource
             Console.WriteLine("Rubber Duck");
             rubber.PerformQuack();
             rubber.PerformFly();
+
+            Console.WriteLine("---------------");
+            rubber.FlyBehavior = new FlyRocketPowered();
+            rubber.PerformFly();
         }
     }
 }

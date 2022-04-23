@@ -10,8 +10,8 @@ namespace DuckProject.DuckSource
     {
         public RubberDuck()
         {
-            flyBehavior = new FlyNoWay();
-            quackBehavior = new MuteQuack();
+            FlyBehavior = new FlyNoWay();
+            QuackBehavior = new Squeak();
         }
 
         public override void Display()
