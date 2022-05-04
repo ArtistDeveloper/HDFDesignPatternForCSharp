@@ -13,14 +13,22 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
         private float humidity;
         private WeatherData weatherData;
 
-        public void Update(float temp, float humidity, float pressure)
+        public CurrentConditionDisplay(WeatherData weatherData)
         {
+            this.weatherData = weatherData;
+            weatherData.RegisterObserver(this);
+        }
 
+        public void Update(float temprature, float humidity, float pressure)
+        {
+            this.temperature = temprature;
+            this.humidity = humidity;
+            Display();
         }
 
         public void Display()
         {
-
+            Console.WriteLine("현재 상태: 온도 " + temperature + "F, 습도 " + humidity + "%");
         }
     }
 }
