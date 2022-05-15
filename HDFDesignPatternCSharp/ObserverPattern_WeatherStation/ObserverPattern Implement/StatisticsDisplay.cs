@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ObserverPattern_WeatherStation.ObserverPatternInterface;
+using IObserverPattern_WeatherStation.IObserverPatternInterface;
 
-namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
+namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
 {
-    public class StatisticsDisplay : Observer, DisplayElement
+    public class StatisticsDisplay : IObserver, IDisplayElement
     {
         private float maxTemp = 0.0f;
         private float minTemp = 200;
@@ -18,7 +18,7 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
         public StatisticsDisplay(WeatherData weatherData)
         {
             this.weatherData = weatherData;
-            weatherData.RegisterObserver(this);
+            weatherData.RegisterIObserver(this);
         }
 
         public void Update(float temp, float humidity, float pressure)

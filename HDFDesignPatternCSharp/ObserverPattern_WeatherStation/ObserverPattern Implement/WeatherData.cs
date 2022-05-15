@@ -3,43 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ObserverPattern_WeatherStation.ObserverPatternInterface;
+using IObserverPattern_WeatherStation.IObserverPatternInterface;
 
-namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
+namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
 {
-    public class WeatherData : Subject
+    public class WeatherData : ISubject
     {
-        private List<Observer> observers;
+        private List<IObserver> IObservers;
         private float temperature;
         private float humidity;
         private float pressure;
 
         public WeatherData()
         {
-            observers = new List<Observer>();
+            IObservers = new List<IObserver>();
         }
 
-        public void RegisterObserver(Observer o)
+        public void RegisterIObserver(IObserver o)
         {
-            observers.Add(o);
+            IObservers.Add(o);
         }
 
-        public void RemoveObserver(Observer o)
+        public void RemoveIObserver(IObserver o)
         {
-            observers.Remove(o);
+            IObservers.Remove(o);
         }
 
-        public void NotifyObservers()
+        public void NotifyIObservers()
         {
-            foreach (Observer observer in observers)
+            foreach (IObserver IObserver in IObservers)
             {
-                observer.Update(temperature, humidity, pressure);
+                IObserver.Update(temperature, humidity, pressure);
             }
         }
 
         public void MeasurementsChanged()
         {
-            NotifyObservers();
+            NotifyIObservers();
         }
 
         public void SetMeasurements(float temperature, float humidity, float pressure)

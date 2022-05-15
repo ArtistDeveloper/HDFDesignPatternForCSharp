@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObserverPattern_WeatherStation.ObserverPatternInterface
+namespace IObserverPattern_WeatherStation.IObserverPatternInterface
 {
-    public interface Observer
+    public interface IObserver
     {
         void Update(float temp, float humidity, float pressure);
     }

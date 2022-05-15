@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObserverPattern_WeatherStation.ObserverPatternInterface
+namespace IObserverPattern_WeatherStation.IObserverPatternInterface
 {
-    public interface Subject
+    public interface ISubject
     {
-        void RegisterObserver(Observer o);
-        void RemoveObserver(Observer o);
-        void NotifyObservers();
+        void RegisterIObserver(IObserver o);
+        void RemoveIObserver(IObserver o);
+        void NotifyIObservers();
     }
 }
