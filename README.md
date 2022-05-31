@@ -10,4 +10,4 @@ Head First Desing Pattern책은 자바 기반으로 작성되어 있는 책이�
 ---
 
 ## 1. strategy pattern
-![image](https://user-images.githubusercontent.com/40491724/171190799-b2d56357-3354-4a9b-bbed-92226cb578e7.png)
+![image](https://user-images.githubusercontent.com/40491724/171191181-68213905-6427-48c3-8a84-e50a752dff81.png)
