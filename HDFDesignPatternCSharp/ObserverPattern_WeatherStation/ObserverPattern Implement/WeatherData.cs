@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IObserverPattern_WeatherStation.IObserverPatternInterface;
 
-namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
+namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
 {
     public class WeatherData : ISubject
     {
@@ -19,27 +19,27 @@ namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
             IObservers = new List<IObserver>();
         }
 
-        public void RegisterIObserver(IObserver o)
+        public void RegisterObserver(IObserver o)
         {
             IObservers.Add(o);
         }
 
-        public void RemoveIObserver(IObserver o)
+        public void RemoveObserver(IObserver o)
         {
             IObservers.Remove(o);
         }
 
-        public void NotifyIObservers()
+        public void NotifyObservers()
         {
-            foreach (IObserver IObserver in IObservers)
+            foreach (IObserver observer in IObservers)
             {
-                IObserver.Update(temperature, humidity, pressure);
+                observer.Update(temperature, humidity, pressure);
             }
         }
 
         public void MeasurementsChanged()
         {
-            NotifyIObservers();
+            NotifyObservers();
         }
 
         public void SetMeasurements(float temperature, float humidity, float pressure)

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IObserverPattern_WeatherStation.IObserverPatternInterface;
 
-namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
+namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
 {
     public class StatisticsDisplay : IObserver, IDisplayElement
     {
@@ -18,7 +18,7 @@ namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
         public StatisticsDisplay(WeatherData weatherData)
         {
             this.weatherData = weatherData;
-            weatherData.RegisterIObserver(this);
+            weatherData.RegisterObserver(this);
         }
 
         public void Update(float temp, float humidity, float pressure)

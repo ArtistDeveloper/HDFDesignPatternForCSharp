@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
+namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
 {
     class MainWeatherStation
     {
@@ -15,6 +15,7 @@ namespace IObserverPattern_WeatherStation.IObserverPattern_Implement
             CurrentConditionDisplay currenDisplay = new CurrentConditionDisplay(weatherData);
             StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
             ForecastDisplay forecastDisplay = new ForecastDisplay(weatherData);
+            HeatIndexDIsplay heatIndexDIsplay = new HeatIndexDIsplay(weatherData);
             
             // 새로운 기상 측정값이 들어왔다고 가정했습니다.
             weatherData.SetMeasurements(80, 65, 30.4f);

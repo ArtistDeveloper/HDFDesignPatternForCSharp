@@ -8,8 +8,8 @@ namespace IObserverPattern_WeatherStation.IObserverPatternInterface
 {
     public interface ISubject
     {
-        void RegisterIObserver(IObserver o);
-        void RemoveIObserver(IObserver o);
-        void NotifyIObservers();
+        void RegisterObserver(IObserver o);
+        void RemoveObserver(IObserver o);
+        void NotifyObservers();
     }
 }

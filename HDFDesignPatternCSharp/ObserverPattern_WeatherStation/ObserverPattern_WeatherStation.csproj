@@ -47,12 +47,13 @@
   <ItemGroup>
     <Compile Include="ObserverPattern Implement\CurrentConditionDisplay.cs" />
     <Compile Include="ObserverPattern Implement\ForecastDisplay.cs" />
+    <Compile Include="ObserverPattern Implement\HeatIndexDIsplay.cs" />
     <Compile Include="ObserverPattern Implement\MainWeatherStation.cs" />
     <Compile Include="ObserverPattern Implement\StatisticsDisplay.cs" />
     <Compile Include="ObserverPattern Implement\WeatherData.cs" />
     <Compile Include="ObserverPatternInterface\DisplayElement.cs" />
     <Compile Include="ObserverPatternInterface\Observer.cs" />
-    <Compile Include="ObserverPatternInterface\Subject.cs" />
+    <Compile Include="ObserverPatternInterface\ISubject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
