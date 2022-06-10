@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DuckSource\Duck.cs" />
-    <Compile Include="DuckSource\DuckMain.cs" />
+    <Compile Include="DuckSource\Main_Duck.cs" />
     <Compile Include="DuckSource\FlyNoWay.cs" />
     <Compile Include="DuckSource\FlyRocketPowered.cs" />
     <Compile Include="DuckSource\FlyWithWings.cs" />

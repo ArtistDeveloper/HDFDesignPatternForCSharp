@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
 {
-    class MainWeatherStation
+    class Main_WeatherStation
     {
         static void Main(string[] args)
         {

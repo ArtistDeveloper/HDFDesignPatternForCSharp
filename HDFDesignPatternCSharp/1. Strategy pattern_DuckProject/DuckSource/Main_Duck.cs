@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DuckProject.DuckSource
 {
-    class DuckMain
+    class Main_Duck
     {
         static void Main(string[] args)
         {
