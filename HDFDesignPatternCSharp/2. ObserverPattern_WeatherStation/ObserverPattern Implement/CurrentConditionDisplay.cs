@@ -19,10 +19,10 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
             weatherData.RegisterObserver(this);
         }
 
-        public void Update(float temprature, float humidity, float pressure)
+        public void Update()
         {
-            this.temperature = temprature;
-            this.humidity = humidity;
+            this.temperature = weatherData.Temperature;
+            this.humidity = weatherData.Humidity;
             Display();
         }
 

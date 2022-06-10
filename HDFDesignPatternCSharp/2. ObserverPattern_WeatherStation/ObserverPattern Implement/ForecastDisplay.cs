@@ -19,10 +19,10 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
             weatherData.RegisterObserver(this);
         }
 
-        public void Update(float temp, float humidity, float pressure)
+        public void Update()
         {
             lastPressure = currentPressure;
-            currentPressure = pressure;
+            currentPressure = weatherData.Pressure;
 
             Display();
         }

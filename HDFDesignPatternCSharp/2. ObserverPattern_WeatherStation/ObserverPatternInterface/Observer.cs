@@ -8,6 +8,6 @@ namespace IObserverPattern_WeatherStation.IObserverPatternInterface
 {
     public interface IObserver
     {
-        void Update(float temp, float humidity, float pressure);
+        void Update();
     }
 }

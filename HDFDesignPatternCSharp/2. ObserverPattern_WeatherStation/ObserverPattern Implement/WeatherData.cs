@@ -14,6 +14,10 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
         private float humidity;
         private float pressure;
 
+        public float Temperature { get => temperature; set => temperature = value; }
+        public float Humidity { get => humidity; set => humidity = value; }
+        public float Pressure { get => pressure; set => pressure = value; }
+
         public WeatherData()
         {
             IObservers = new List<IObserver>();
@@ -33,7 +37,7 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
         {
             foreach (IObserver observer in IObservers)
             {
-                observer.Update(temperature, humidity, pressure);
+                observer.Update();
             }
         }
 
@@ -44,8 +48,8 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
 
         public void SetMeasurements(float temperature, float humidity, float pressure)
         {
-            this.temperature = temperature;
-            this.humidity = humidity;
+            this.Temperature = temperature;
+            this.Humidity = humidity;
             this.pressure = pressure;
             MeasurementsChanged();
         }

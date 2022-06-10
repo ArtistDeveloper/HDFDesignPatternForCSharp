@@ -24,9 +24,9 @@ namespace ObserverPattern_WeatherStation.ObserverPattern_Implement
         /// <param name="t"></param> : 기온
         /// <param name="rh"></param> : 습도
         /// <param name="pressure"></param> : 기압
-        public void Update(float t, float rh, float pressure)
+        public void Update()
         {
-            heatIndex = computeHeatIndex(t, rh);
+            heatIndex = computeHeatIndex(weatherData.Temperature, weatherData.Humidity);
             Display();
         }
 
