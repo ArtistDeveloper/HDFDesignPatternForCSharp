@@ -10,7 +10,7 @@ namespace DecoratorPattern_Starbuz.Source
     {
         public Espresso()
         {
-            Description = "에스프레소";
+            description = "에스프레소";
         }
 
         public override double Cost()

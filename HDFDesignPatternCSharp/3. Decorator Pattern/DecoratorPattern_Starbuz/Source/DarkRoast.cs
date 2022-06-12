@@ -10,7 +10,7 @@ namespace DecoratorPattern_Starbuz.Source
     {
         public DarkRoast()
         {
-            Description = "다크 로스트";
+            description = "다크 로스트";
         }
 
         public override double Cost()

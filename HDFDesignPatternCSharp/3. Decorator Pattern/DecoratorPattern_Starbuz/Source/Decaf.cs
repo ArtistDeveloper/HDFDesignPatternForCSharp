@@ -10,7 +10,7 @@ namespace DecoratorPattern_Starbuz.Source
     {
         public Decaf()
         {
-            Description = "디카페인";
+            description = "디카페인";
         }
 
         public override double Cost()

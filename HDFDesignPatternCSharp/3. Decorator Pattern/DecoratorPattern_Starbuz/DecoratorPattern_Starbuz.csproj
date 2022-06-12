@@ -45,6 +45,15 @@
   <ItemGroup>
     <Compile Include="Main_Starbuz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Beverage.cs" />
+    <Compile Include="Source\CondimentDecorator.cs" />
+    <Compile Include="Source\DarkRoast.cs" />
+    <Compile Include="Source\Decaf.cs" />
+    <Compile Include="Source\Espresso.cs" />
+    <Compile Include="Source\HouseBlend.cs" />
+    <Compile Include="Source\Mocha.cs" />
+    <Compile Include="Source\Soy.cs" />
+    <Compile Include="Source\Whip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

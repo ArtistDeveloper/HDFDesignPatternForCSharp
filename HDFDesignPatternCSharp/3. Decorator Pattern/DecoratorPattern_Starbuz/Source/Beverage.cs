@@ -12,10 +12,14 @@ namespace DecoratorPattern_Starbuz.Source
     /// </summary>
     public abstract class Beverage
     {
-        private string description = "제목 없음";
+        protected string description = "제목 없음";
         // private string Description { get; set; } = "제목없음"; // C# 6이상부터는 자동 구현 프로퍼티를 변수처럼 초기화 할 수 있습니다.
+        // public string Description { get => description; protected set => description = value; }
 
-        public string Description { get => description; protected set => description = value; }
+        public string GetDescription()
+        {
+            return description;
+        }
 
         public abstract double Cost();
     }

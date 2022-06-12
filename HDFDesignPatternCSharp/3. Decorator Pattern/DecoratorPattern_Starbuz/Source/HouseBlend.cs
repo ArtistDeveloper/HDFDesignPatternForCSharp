@@ -10,7 +10,7 @@ namespace DecoratorPattern_Starbuz.Source
     {
         public HouseBlend()
         {
-            Description = "하우스 블렌드 커피";
+            description = "하우스 블렌드 커피";
         }
 
         public override double Cost()
