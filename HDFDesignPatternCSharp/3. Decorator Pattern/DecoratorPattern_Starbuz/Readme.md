@@ -16,3 +16,22 @@
 **바뀌는 부분 중에서 OCP를 적용할 만큼 중요한 부분을 어떻게 골라낼 수 있나요?**
 - 객체지향 시스템 디자인 경험과 지금 건드리고 있는 분야의 지식이 많다면 쉽게 구분할 수 있습니다.
 - 여러 디자인을 살펴보면 바뀌는 부분 가운데 주요한 부분을 골라내는 안목이 높아집니다.
+
+구성 요소는 총 4가지 있다.
+
+추상 구성요소?
+구상 구성요소?
+추상 데코레이터, 구상 데코레이터?
+예) Abstract Class Object, (추상 구성요소)
+
+     Abstract Class Decorator extends Object (추상 데코레이터)
+
+     Class RealObject extends Object, (구상 구성요소)
+
+     Class RealDecorator extends Decorator (구상 데코레이터)
+
+구상 구성요소는 이 챕터에서는 Dark Roast나 Espresso에 해당하는 것 같다.
+
+추상 구성요소 == Beverage
+추상 데코레이터 == CondimentDecorator
+구상 데코레이터 == Mocha, Whip
