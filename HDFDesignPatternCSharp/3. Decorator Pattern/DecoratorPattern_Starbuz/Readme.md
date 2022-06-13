@@ -1,4 +1,6 @@
 
+
+
 ## 디자인 원칙
 
 ### OCP(Open-Closed principle)
@@ -20,9 +22,10 @@
 구성 요소는 총 4가지 있다.
 
 추상 구성요소?
-구상 구성요소?
+구상 구성요소?7
 추상 데코레이터, 구상 데코레이터?
-예) Abstract Class Object, (추상 구성요소)
+예) 
+     Abstract Class Object, (추상 구성요소)
 
      Abstract Class Decorator extends Object (추상 데코레이터)
 
