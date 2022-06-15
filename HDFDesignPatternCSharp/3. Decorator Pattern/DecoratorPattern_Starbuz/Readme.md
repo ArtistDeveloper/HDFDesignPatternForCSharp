@@ -178,6 +178,8 @@
 **데코레이터 패턴**으로 객체에 추가 요소를 동적으로 더할 수 있습니다.
 데코레이터를 사용하면 서브클래스를 만들 때보다 훨씬 유연하게 기능을 확장할 수 있습니다.
 
+<br/>
+
 ### 3.1 데코레이터 내용 정리
 1. 데코레이터의 슈퍼클래스는 자신이 장식하고 있는 객체의 슈퍼클래스와 같습니다.
 2. 한 객체를 여러 개의 데코레이터로 감쌀 수 있습니다.
@@ -199,4 +201,50 @@
   - Decorator는 Component의 상태를 확장할 수 있습니다.
   - 데코레이터가 새로운 메소드를 추가할 수도 있습니다. 하지만 일반적으로 새로운 메소드를 추가하는 대신 Component에 원래 있던 메소드를 (호출하기 전이나 호출한 후에) 별도의 작업으로 처리해서 새로운 기능을 추가합니다.
 
+<br/>
 
+### 3.2 Beverage 클래스 장식하기
+
+![image](https://user-images.githubusercontent.com/40491724/173922837-7ec3e545-b03a-47a9-9bcb-9cef26a5d379.png)
+
+- Beverage는 앞에 나왔던 Component 추상 클래스와 비슷한 개념입니다.
+- HouseBlend, DarkRoast, Espresso, Decaf: 커피 종류마다 구성 요소를 나타내는 구상 클래스를 하나씩 만들었습니다.
+- Milk, Mocha, Soy, Whip: 각각의 첨가물을 나타내는 데코레이터. cost()와 getDescription()도 구현해야 합니다.
+
+<br/>
+
+### 3.3 흠... 상속(Inheritance)과 구성(Composition)에 대한 개념 정리..?
+
+우리가 방금까지 살펴본 클래스 다이어그램을 보면 상속을 사용하고 있다는 것을 알게됩니다. 구성을 사용해야 좋은 것 아니었냐는 의문이 들 수도 있습니다. 이 부분을 한 번 살펴봅시다.
+- CondimentDecorator에서 Beverage클래스를 확장하고 있는 것을 보니 **상속**이 맞습니다.
+- 하지만, 여기서 상속이 문제가 안되는 점은 상속을 사용해서 형식을 맞추는 것이지 상속으로 행동을 물려받는 게 아니라서 괜찮습니다.
+- 데코레이터 형식이 감싸는 객체의 형식과 같다는 점이 중요한 부분입니다.
+
+행동은 어디에서 오나?
+- 어떤 구성 요소(Beverage)를 가지고 데코레이터를 만들 때 새로운 행동을 추가합니다.
+- 행동은 슈퍼클래스로부터 행동을 상속받아서 얻는 것이 아니라, 새로운 행동은 객체를 **구성**(composition)해서 얻는 것입니다.
+- 행동을 상속받으려고 Beverage의 서브클래스를 만든 게 아니라 형식을 맞추려 하는 것입니다.
+- 행동은 기본 구성 요소와는 다른 데코레이터 등을 인스턴스 변수에 저장하는 식으로 연결하는 것입니다.
+
+즉, 객체 구성(인스턴스 변수로 다른 객체를 저장하는 방식)을 이용하고 있으니까 음료에 첨가물을 다양하게 추가해도 유연성을 잃지 않을 수 있습니다.
+
+만약 상속만 써야 했다면 행동이 컴파일 시에 정적으로 결정되어 버립니다. 그러니까 슈퍼클래스에서 받은 것과 코드로 오버라이드 한 것만 쓸 수 있습니다. 하지만 구성을 활용하면 실행 중에 데코레이터를 마음대로 조합해서 사용할 수 있다는 장점이 있습니다.
+
+그래서 데코레이터를 언제든지 구현해서 새로운 행동을 추가할 수도 있습니다. 상속에만 의존했다면 새로운 행동을 추가할 때마다 기존 코드를 바꿔야 했던 단점이 극복되었습니다.
+
+그리고 구성 요소의 형식만 상속하면 되는 거라면 Beverage클래스를 왜 인터페이스로 만들지 않고 추상 클래스로 만든걸까요?
+- 제일 처음 코드를 받았을 때부터 Beverage클래스가 추상 클래스를 사용하고 있어서 그렇습니다.
+- 원래 데코레이터 패턴에서는 특정한 추상 구성 요소를 지정할 필요가 없어서 인터페이스를 사용하면 됩니다.
+- 하지만 기존 코드를 고치는 일은 될 수 있으면 피하는 것이 좋으니까 추상 클래스를 써도 되는 상황이라면 그냥 추상 클래스만 가지고 작업을 하는게 좋을 수도 있습니다.
+
+
+[구성에 관련된 개념이 필요하면 해당 링크를 참조해서 '목차 2' 부분을 읽어주세요.](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/tree/main/HDFDesignPatternCSharp/1.%20Strategy%20pattern_DuckProject#2%EC%83%81%EC%86%8D%EA%B3%BC-%EA%B5%AC%EC%84%B1)
+
+<br/>
+
+## 4. 자바의 코드와 C#과 다른 점
+
+해당 링크에서 summary부분에서 차이점을 확인할 수 있습니다.
+
+[Beverage 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/Beverage.cs#L19-L25)
+[CondimentDecorator 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/CondimentDecorator.cs#L13-L17)
