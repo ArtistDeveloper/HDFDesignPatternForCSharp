@@ -2,7 +2,9 @@
 
 사업을 시작할 무렵에 만들어진 주문 시스템 클래스는 다음과 같이 구성되었습니다.
 
-![image](https://user-images.githubusercontent.com/40491724/173288129-331f72c2-338b-4e12-8504-f8e8a00b3d88.png)
+<p align="center>
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
+</p>
 
 - Beverage클래스의 cost()메소드는 추상 메소드입니다.
 - 모든 서브클래스에서 음료의 가격을 리턴하는 cost()메소드를 구현해야 합니다.
@@ -10,6 +12,8 @@
 
 그러나, 사업이 성공하고 규모가 커질수록 다양한 음료가 나오게 되었고 그에 맞춰 고객은 커피를 주문할 때 우유나 두유, 모카(초콜릿)을 추가하고 그 위에 휘핑크림을 얹기도 합니다.
 그래서 각각을 추가할 때마다 커피 가격이 올라가야 하기에 주문 시스템을 구현할 때 이런 점을 모두 고려해야 합니다.
+
+
 
 그래서 처음에는 시스템이 이런식으로 확장되었습니다.
 ![image](https://user-images.githubusercontent.com/40491724/173288149-6470c7df-2830-446c-8fb5-8171260dd3aa.png)
