@@ -1,5 +1,6 @@
 ## 목차
-[1. 전략 패턴](#1전략-패턴strategy-pattern) &nbsp;
+[1. 전략 패턴](#1전략-패턴strategy-pattern) 
+&nbsp;
 [2. 상속과 구성](#2상속과-구성) &nbsp;
 [3. 전략 패턴이란](#전략-패턴) &nbsp;
 
