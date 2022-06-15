@@ -246,5 +246,6 @@
 
 해당 링크에서 summary부분에서 차이점을 확인할 수 있습니다.
 
-[Beverage 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/Beverage.cs#L19-L25)
-[CondimentDecorator 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/CondimentDecorator.cs#L13-L17)
+[Beverage 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/Beverage.cs#L19-L25)<br/>
+[CondimentDecorator 클래스](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/blob/Document/HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Source/CondimentDecorator.cs#L13-L17)<br/>
+
