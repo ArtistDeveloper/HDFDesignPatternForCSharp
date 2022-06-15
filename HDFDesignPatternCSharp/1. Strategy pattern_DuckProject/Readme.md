@@ -1,3 +1,8 @@
+## 목차
+[1. 전략 패턴](#1전략-패턴strategy-pattern)
+[2. 상속과 구성](#2상속과-구성)
+[3. 전략 패턴이란](#전략-패턴)
+
 ## 1.전략 패턴(strategy pattern)
 ![image](https://user-images.githubusercontent.com/40491724/171191181-68213905-6427-48c3-8a84-e50a752dff81.png)
 
@@ -76,9 +81,9 @@ public class BallSport
 }
 
 ```
-구성은 다음과 같을 때 말합니다.
-- 위 코드처럼 클래스 BallSport에 클래스 Soccer 변수가 선언되어 있는 구조 
-- 클래스 Soccer의 라이프 사이클이 클래스 BallSport에 종속됨을 의미함.
+**구성은 다음과 같을 때 말합니다.**
+- 위 코드처럼 class BallSport에 class Soccer 변수가 선언되어 있는 구조 
+- class Soccer의 라이프 사이클이 class BallSport에 종속됨을 의미함.
 
 **구성의 장점**
 1. 메서드를 호출하는 방식으로 동작하기 때문에 캡슐화를 깨뜨리지 않습니다.
