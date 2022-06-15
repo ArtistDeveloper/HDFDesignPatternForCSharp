@@ -2,8 +2,8 @@
 
 사업을 시작할 무렵에 만들어진 주문 시스템 클래스는 다음과 같이 구성되었습니다.
 
-<p align="center>
-  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
+<p align="center">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173288129-331f72c2-338b-4e12-8504-f8e8a00b3d88.png">
 </p>
 
 - Beverage클래스의 cost()메소드는 추상 메소드입니다.
@@ -16,7 +16,9 @@
 
 
 그래서 처음에는 시스템이 이런식으로 확장되었습니다.
-![image](https://user-images.githubusercontent.com/40491724/173288149-6470c7df-2830-446c-8fb5-8171260dd3aa.png)
+<p align="center">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173288149-6470c7df-2830-446c-8fb5-8171260dd3aa.png">
+</p>
 
 
 > cost() 메소드는 첨가물도 포함해서 커피의 최종 가격을 계산해줍니다.
