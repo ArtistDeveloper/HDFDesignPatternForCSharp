@@ -35,10 +35,8 @@
 3. has, set함수들은 첨가물의 불리언 값을 알아내거나 설정하는 게터/세터 메소드입니다.
 
 
-![image](https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png)
-
 <p align="center">
-  <img width = "80%"height = "70%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
 </p>
 
 - 슈퍼클래스에 있는 cost()는 첨가물의 가격을 계산합니다.
