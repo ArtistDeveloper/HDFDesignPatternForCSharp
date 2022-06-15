@@ -240,6 +240,8 @@
 
 [구성에 관련된 개념이 필요하면 해당 링크를 참조해서 '목차 2' 부분을 읽어주세요.](https://github.com/ArtistDeveloper/HDFDesignPatternForCSharp/tree/main/HDFDesignPatternCSharp/1.%20Strategy%20pattern_DuckProject#2%EC%83%81%EC%86%8D%EA%B3%BC-%EA%B5%AC%EC%84%B1)
 
+<br/>
+
 ## 4. 자바의 코드와 C#과 다른 점
 
 해당 링크에서 summary부분에서 차이점을 확인할 수 있습니다.
