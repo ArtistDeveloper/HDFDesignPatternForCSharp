@@ -27,7 +27,7 @@
 인스턴스 변수와 슈퍼클래스 상속을 써서 첨가물을 관리해봅시다.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/40491724/173292169-2bcb1535-5750-49c6-bf3a-fcd9543422c6.png">
+  <img  src="https://user-images.githubusercontent.com/40491724/173292169-2bcb1535-5750-49c6-bf3a-fcd9543422c6.png">
 </p>
 
 1. 각 첨가물에 해당하는 불리언 변수를 새로 만들었습니다.
@@ -36,6 +36,10 @@
 
 
 ![image](https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png)
+
+<p align="center">
+  <img width = "70%" height = "70%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
+</p>
 
 - 슈퍼클래스에 있는 cost()는 첨가물의 가격을 계산합니다.
 - 서브클래스에서 cost() 메소드를 오버라이드 할 때 그 기능을 확장해서 특정 음료의 가격을 더합니다.
