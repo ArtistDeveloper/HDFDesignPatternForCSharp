@@ -35,6 +35,68 @@
 3. has, set함수들은 첨가물의 불리언 값을 알아내거나 설정하는 게터/세터 메소드입니다.
 
 
+![image](https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png)
+
+- 슈퍼클래스에 있는 cost()는 첨가물의 가격을 계산합니다.
+- 서브클래스에서 cost() 메소드를 오버라이드 할 때 그 기능을 확장해서 특정 음료의 가격을 더합니다.
+
+각 구상클래스의 cost()메소드는 음료의 가격을 계산한 다음 슈퍼클래스에서 구현한 cost()를 호출해서 첨가물 비용을 더합니다.
+
+이 내용을 코드로 표현하자면 다음과 같습니다.
+
+```csharp
+    public class Beverage
+    {
+        // milkCost, soyCost, mochaCost, whipCost
+        // 각각에 해당하는 인스턴스 변수를 선언하고
+        // 우유, 두유, 모카, 휘핑크림에 대한 게터와 세터 메소드를 선언합니다.
+
+        public double Cost()
+        {
+            double condimentCost = 0.0;
+            if (hasMilk())
+            {
+                condimentCost += milkCost;
+            }
+            if (hasSoy())
+            {
+                condimentCost += soyCost;
+            }
+            if (hasMocha())
+            {
+                condimentCost += mochaCost;
+            }
+            if (hasWhip())
+            {
+                condimentCost += whipCost;
+            }
+            return condimentCost;
+        }
+    }
+
+    public class DarkRoast : Beverage
+    {
+        public DarkRoast()
+        {
+            description = "최고의 다크 로스트 커피";
+        }
+
+        public override double Cost()
+        {
+            return 1.99 + base.Cost();
+        }
+    }
+```
+
+이 방식의 문제점을 무엇일까요?
+- 첨가물 가격이 바뀔 때마다 기존 코드를 수정해야 합니다.
+- 첨가물의 종류가 많아지면 새로운 메소드를 추가해야 하고, 슈퍼클래스의 cost()메소드도 고쳐야합니다.
+- 새로운 음료가 출시될 수도 있습니다. 그중에는 특정 첨가물이 들어가면 안 되는 음료도 있을 것입니다. 예를 들어 아이스 티를 생각해 보면, Tea 서브클래스에서도 hasWhip() 같은 메소드가 여전히 상속받게 될 것입니다.
+  - **1장에서도 경험했듯이 꽤 심각한 문제입니다.**
+
+이 구조에서 고객이 더블 모카를 주문하면 어떻게 해야할까?
+- 저였으면 milk, soy, mocha, whip의 bool변수를 short로 선언하고 해당 숫자만큼 cost를 더해지도록 구현했을 것 같습니다.
+
 
 ## 디자인 원칙
 
