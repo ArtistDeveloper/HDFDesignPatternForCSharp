@@ -2,7 +2,9 @@
 
 사업을 시작할 무렵에 만들어진 주문 시스템 클래스는 다음과 같이 구성되었습니다.
 
-![image](https://user-images.githubusercontent.com/40491724/173288129-331f72c2-338b-4e12-8504-f8e8a00b3d88.png)
+<p align="center">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173288129-331f72c2-338b-4e12-8504-f8e8a00b3d88.png">
+</p>
 
 - Beverage클래스의 cost()메소드는 추상 메소드입니다.
 - 모든 서브클래스에서 음료의 가격을 리턴하는 cost()메소드를 구현해야 합니다.
@@ -11,8 +13,12 @@
 그러나, 사업이 성공하고 규모가 커질수록 다양한 음료가 나오게 되었고 그에 맞춰 고객은 커피를 주문할 때 우유나 두유, 모카(초콜릿)을 추가하고 그 위에 휘핑크림을 얹기도 합니다.
 그래서 각각을 추가할 때마다 커피 가격이 올라가야 하기에 주문 시스템을 구현할 때 이런 점을 모두 고려해야 합니다.
 
+
+
 그래서 처음에는 시스템이 이런식으로 확장되었습니다.
-![image](https://user-images.githubusercontent.com/40491724/173288149-6470c7df-2830-446c-8fb5-8171260dd3aa.png)
+<p align="center">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173288149-6470c7df-2830-446c-8fb5-8171260dd3aa.png">
+</p>
 
 
 > cost() 메소드는 첨가물도 포함해서 커피의 최종 가격을 계산해줍니다.
@@ -27,7 +33,7 @@
 인스턴스 변수와 슈퍼클래스 상속을 써서 첨가물을 관리해봅시다.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/40491724/173292169-2bcb1535-5750-49c6-bf3a-fcd9543422c6.png">
+  <img  src="https://user-images.githubusercontent.com/40491724/173292169-2bcb1535-5750-49c6-bf3a-fcd9543422c6.png">
 </p>
 
 1. 각 첨가물에 해당하는 불리언 변수를 새로 만들었습니다.
@@ -35,7 +41,9 @@
 3. has, set함수들은 첨가물의 불리언 값을 알아내거나 설정하는 게터/세터 메소드입니다.
 
 
-![image](https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png)
+<p align="center">
+  <img width = "80%"height = "80%" src="https://user-images.githubusercontent.com/40491724/173298578-ed22717d-fab0-45cf-a37a-580e64c3e9fb.png">
+</p>
 
 - 슈퍼클래스에 있는 cost()는 첨가물의 가격을 계산합니다.
 - 서브클래스에서 cost() 메소드를 오버라이드 할 때 그 기능을 확장해서 특정 음료의 가격을 더합니다.
