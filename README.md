@@ -10,6 +10,9 @@ Head First Desing Pattern책은 자바 기반으로 작성되어 있는 책이�
 
 ---
 
+환경
+- Visual Studio 2019
+
 ## 각 패턴에 대한 설명
 
 [1. 전략 패턴](HDFDesignPatternCSharp/1.%20Strategy%20pattern_DuckProject/Readme.md)
