@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEC1B56C-0B24-4E4A-9370-515A2E32E1C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckProject", "1. Strategy pattern_DuckProject\DuckProject.csproj", "{274876D8-720F-4D65-A83D-33994C5776A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Observer Pattern_WeatherStation", "2. ObserverPattern_WeatherStation\2. Observer Pattern_WeatherStation.csproj", "{46CBEF9B-1428-48F4-88D2-947082CD07F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern_WeatherStation", "2. ObserverPattern_WeatherStation\ObserverPattern_WeatherStation.csproj", "{46CBEF9B-1428-48F4-88D2-947082CD07F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. FactoryPattern", "4. FactoryPattern\4. FactoryPattern.csproj", "{569A471A-9D9C-41BC-B9E2-76BDEDE4742C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern_Starbuz", "3. Decorator Pattern\DecoratorPattern_Starbuz\DecoratorPattern_Starbuz.csproj", "{1353721F-0ACC-4CF1-B344-84BCC946C2A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Decorator Pattern_Starbuz", "3. Decorator Pattern\3. Decorator Pattern_Starbuz.csproj", "{1353721F-0ACC-4CF1-B344-84BCC946C2A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Strategy Pattern_DuckProject", "1. Strategy pattern_DuckProject\1. Strategy Pattern_DuckProject.csproj", "{274876D8-720F-4D65-A83D-33994C5776A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Factory Pattern", "4. Factory Pattern\4. Factory Pattern.csproj", "{EB3C9F4D-145E-41CE-B244-CB574CF8CB5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,21 +21,32 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{274876D8-720F-4D65-A83D-33994C5776A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{274876D8-720F-4D65-A83D-33994C5776A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{274876D8-720F-4D65-A83D-33994C5776A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{274876D8-720F-4D65-A83D-33994C5776A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46CBEF9B-1428-48F4-88D2-947082CD07F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46CBEF9B-1428-48F4-88D2-947082CD07F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CBEF9B-1428-48F4-88D2-947082CD07F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CBEF9B-1428-48F4-88D2-947082CD07F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569A471A-9D9C-41BC-B9E2-76BDEDE4742C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569A471A-9D9C-41BC-B9E2-76BDEDE4742C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569A471A-9D9C-41BC-B9E2-76BDEDE4742C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569A471A-9D9C-41BC-B9E2-76BDEDE4742C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1353721F-0ACC-4CF1-B344-84BCC946C2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1353721F-0ACC-4CF1-B344-84BCC946C2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1353721F-0ACC-4CF1-B344-84BCC946C2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1353721F-0ACC-4CF1-B344-84BCC946C2A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{274876D8-720F-4D65-A83D-33994C5776A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274876D8-720F-4D65-A83D-33994C5776A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274876D8-720F-4D65-A83D-33994C5776A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274876D8-720F-4D65-A83D-33994C5776A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3C9F4D-145E-41CE-B244-CB574CF8CB5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3C9F4D-145E-41CE-B244-CB574CF8CB5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3C9F4D-145E-41CE-B244-CB574CF8CB5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3C9F4D-145E-41CE-B244-CB574CF8CB5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{569A471A-9D9C-41BC-B9E2-76BDEDE4742C} = {FEC1B56C-0B24-4E4A-9370-515A2E32E1C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40A926A2-3F96-4041-966C-DFC41883C6B3}
