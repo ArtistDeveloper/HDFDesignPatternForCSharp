@@ -19,4 +19,4 @@ Head First Desing Pattern책은 자바 기반으로 작성되어 있는 책이�
 
 [1. 전략 패턴](HDFDesignPatternCSharp/1.%20Strategy%20pattern_DuckProject/Readme.md)
 
-[3. 데코레이터 패턴](HDFDesignPatternCSharp/3.%20Decorator%20Pattern/DecoratorPattern_Starbuz/Readme.md)
+[3. 데코레이터 패턴](HDFDesignPatternCSharp/3.%20Decorator%20Pattern/Readme.md)
