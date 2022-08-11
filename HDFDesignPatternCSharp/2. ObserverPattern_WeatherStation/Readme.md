@@ -106,7 +106,8 @@ public void measurementsChanged()
 }
 ```
 
-![image](https://user-images.githubusercontent.com/40491724/184195811-5bb908c0-b2c6-4f72-a7b7-f7d662d6a994.png)
+![image](https://user-images.githubusercontent.com/40491724/184196718-b6e1b4bc-fbed-45ea-896d-cea467bc25e5.png)
 
 실행 중에 디스플레이를 더하거나 빼려면 어떻게 해야할지도 생각해봅시다.
 
+슬슬 옵저버 패턴을 기상 모니터링 애플리케이션에 적용하는 방법을 알아봅시다.
