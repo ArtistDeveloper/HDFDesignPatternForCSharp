@@ -7,7 +7,10 @@
 Weather-O-Rama회사의 기상 스테이션 구축 프로젝트 제작을 협업하게 되었습니다.
 
 Weather-O-Rama에서 제공하는 부분을 살펴봅시다. 여기서 우리가 만들거나 확장해야 하는 부분을 전부 파악해야 합니다.
-![image](https://user-images.githubusercontent.com/40491724/184124857-5e3b4d1f-23ae-4c47-99c6-06f8457b519b.png)
+
+<p align="center">
+    <img src = "https://user-images.githubusercontent.com/40491724/184124857-5e3b4d1f-23ae-4c47-99c6-06f8457b519b.png"/ height="70%" width="70%">
+</p>
 
 - 기상 스테이션(실제 기상 정보를 수집하는 물리 장비)
 - WeatherData 객체(기상 스테이션으로부터 오는 정보를 추적하는 객체)
@@ -54,13 +57,56 @@ Weather-O-Rama에서 "// 코드가 들어갈 자리"에 우리 코드를 여기�
 소프트웨어 개발에서는 **변화**는 무조건 생깁니다. 만약 기상 스테이션 프로젝트가 성공하면 디스플레이가 더 늘어날 수도 있고, 디스플레이를 추가할 수 있는 마켓플레이스가 만들어질지도 모릅니다. 그러니 확장 기능을 추가해봅시다.
 - **확장성**: 다른 개발자가 새로운 디스플레이를 만들고 싶을 수도 있습니다. 사용자가 마음대로 디스플레이 요소를 더하거나 뺄 수 있게 해주는 것도 괜찮을 것 같습니다. 현재는 3가지 디스플레이 뿐이지만 언젠가는 새로운 디스플레이가 잔뜩 들어오게 될지도 모릅니다.
 
-
+### 2.2 기상 스테이션용 코드 추가하기
 우선 이런 식으로 구현해 볼수도 있을 것 같습니다. Weather-O-Rama 개발자가 준 힌트를 바탕으로 MeasurementsChanged() 메소드에 다음고 같이 코드를 추가했습니다.
 
 ```CSharp
 public class WeatherData
 {
+    // 인스턴스 변수 선언
 
+    public void measurementsChanged()
+    {
+        // weatherData에 있는 게터 메소드를 호출해서 최신 측정값을 가져온다.
+        float temp = getTemperature();
+        float humidty = getHumidity();
+        float pressure = getPressure();
+
+        // 각 디스플레이를 갱신
+        currentConditionDisplay.update(temp, humidity, pressure);
+        statisticsDisplay.update(temp, humidity, pressure);
+        forecastDisplay.update(temp, humidty, pressure);
+    }
+
+    // 기타 메소드
 }
-
 ```
+
+**위 코드의 문제점**
+1. 인터페이스가 아닌 구체적인 구현을 바탕으로 코딩을 하고 있습니다.
+2. 새로운 디스플레이 항목이 추가될 때마다 코드를 변경해야 합니다.
+3. 실행 중에 디스플레이 항목을 추가하거나 제거할 수 없습니다.
+4. 바뀌는 부분을 캡슐화하지 않았습니다.
+
+
+### 2.3 원칙으로 추가 코드 살펴보기
+
+1장에서 배운 개념과 원칙들을 다시 한번 떠올려 봅시다.
+
+```CSharp
+public void measurementsChanged()
+{
+    float temp = getTemperature();
+    float humidty = getHumidity();
+    float pressure = getPressure();
+    
+    currentConditionDisplay.update(temp, humidity, pressure);
+    statisticsDisplay.update(temp, humidity, pressure);
+    forecastDisplay.update(temp, humidty, pressure);
+}
+```
+
+![image](https://user-images.githubusercontent.com/40491724/184195811-5bb908c0-b2c6-4f72-a7b7-f7d662d6a994.png)
+
+실행 중에 디스플레이를 더하거나 빼려면 어떻게 해야할지도 생각해봅시다.
+
