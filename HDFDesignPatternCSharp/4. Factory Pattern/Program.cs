@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _4.Factory_Pattern
+namespace Factory_Pattern
 {
     class Program
     {

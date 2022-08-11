@@ -50,7 +50,7 @@
 
 <br/>
 
-### 2.2 구성이란
+### 2.2 구성(Composition)이란
 책을 보면서 구성에 대해 어렴풋이 알게 된 것 같긴한데, 잘 모르겠다는 느낌은 여전히 받고 있었습니다. 그래서 구성에 대해서 조금 더 알아보고 작성해보았습니다.
 
 [구성에 대해 좋은 설명을 들고 왔습니다.](https://tecoble.techcourse.co.kr/post/2020-05-18-inheritance-vs-composition/)
