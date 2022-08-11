@@ -19,7 +19,9 @@ Weather-O-Rama와 계약을 체결하면 WeatherData 객체로 현재 조건, �
 
 ### 1.1 WeatherData 클래스 살펴보기
 
-![image](https://user-images.githubusercontent.com/40491724/184126542-b36a9258-d5f4-4a87-b5e6-253c8b44eff2.png){: .align-center}
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/40491724/184126542-b36a9258-d5f4-4a87-b5e6-253c8b44eff2.png"/>
+</p>
 
 우선 기상 스테이션에서 갱신된 정보를 가져오는 일은 WeatherData 객체가 알아서 해 준다는 점만 알고 있으면 됩니다.
 
@@ -58,7 +60,7 @@ Weather-O-Rama에서 "// 코드가 들어갈 자리"에 우리 코드를 여기�
 ```CSharp
 public class WeatherData
 {
-    
+
 }
 
 ```
