@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Observer", "2.Observer", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer", "Patterns\2.Observer\Observer\Observer.csproj", "{11C33654-D524-40ED-80D9-1A777C9C4677}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteControl", "Patterns\6.Command\RemoteControl\RemoteControl.csproj", "{8C62485A-7F19-49C1-866A-440E05D5537E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{11C33654-D524-40ED-80D9-1A777C9C4677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11C33654-D524-40ED-80D9-1A777C9C4677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11C33654-D524-40ED-80D9-1A777C9C4677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C62485A-7F19-49C1-866A-440E05D5537E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C62485A-7F19-49C1-866A-440E05D5537E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C62485A-7F19-49C1-866A-440E05D5537E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C62485A-7F19-49C1-866A-440E05D5537E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{D09A4C1A-9B88-4381-B28C-773129F4E607} = {29980B22-208C-402F-9024-A83F6C957C0B}
 		{DB2799BF-B2C5-4C6D-8907-B1E3582A9630} = {2BEC913E-5C77-47D6-AE4B-27FD426E5BEF}
 		{11C33654-D524-40ED-80D9-1A777C9C4677} = {DB2799BF-B2C5-4C6D-8907-B1E3582A9630}
+		{8C62485A-7F19-49C1-866A-440E05D5537E} = {EC8BA4DA-6EF1-44BA-BAA8-F6478F3731B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40A926A2-3F96-4041-966C-DFC41883C6B3}
