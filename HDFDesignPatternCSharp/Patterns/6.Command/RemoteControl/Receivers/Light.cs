@@ -15,14 +15,8 @@ namespace RemoteControl.Receivers
             _location = location;
         }
 
-        public void On()
-        {
-            Console.WriteLine("조명이 켜졌습니다");
-        }
+        public void On() => Console.WriteLine(_location + " 조명이 켜졌습니다");
 
-        public void Off()
-        {
-            Console.WriteLine("조명이 꺼졌습니다");
-        }
+        public void Off() => Console.WriteLine(_location + " 조명이 꺼졌습니다");
     }
 }
